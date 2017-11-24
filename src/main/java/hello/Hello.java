@@ -17,7 +17,7 @@ public class Hello {
     @ResponseBody
     public String hello()
     {
-        Logger logger = LoggerFactory.getLogger("chapters.introduction.HelloWorld1");
+        Logger logger = LoggerFactory.getLogger("a");
         logger.info("got a request");
         return "its nadav first web server";
     }

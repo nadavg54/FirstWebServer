@@ -37,5 +37,9 @@ dependencies {
     // tag::actuator[]
     compile("org.springframework.boot:spring-boot-starter-actuator")
     // end::actuator[]
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-elasticsearch', version: '1.2.5.RELEASE'
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile group: 'org.projectlombok', name: 'lombok-maven', version: '1.16.18.1', ext: 'pom'
+
     testCompile("junit:junit")
 }
