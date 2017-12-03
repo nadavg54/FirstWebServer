@@ -4,6 +4,8 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
+import javax.persistence.GeneratedValue;
+import java.util.Date;
 
 
 /**
@@ -14,9 +16,14 @@ import org.springframework.data.elasticsearch.annotations.Document;
 public class ResturantExpenseEntity {
 
     @Id
+    @GeneratedValue
     private String id;
 
     private String name;
+
+    private Date date;
+
+    private Short expense;
 
 
 }
